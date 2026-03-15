@@ -1,0 +1,40 @@
+# Web framework
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+
+# Database
+sqlalchemy==2.0.36
+asyncpg==0.30.0
+alembic==1.14.0
+
+# Settings
+pydantic==2.10.3
+pydantic-settings==2.6.1
+
+# Cache / Task Queue
+redis==5.2.1
+celery[redis]==5.4.0
+
+# Salesforce
+simple-salesforce==1.12.5
+
+# Git
+gitpython==3.1.43
+
+# GitHub API
+httpx==0.28.1
+
+# Jira
+jira==3.8.0
+
+# AWS
+boto3==1.35.78
+
+# Security / encryption
+cryptography==44.0.0
+
+# AI
+anthropic==0.40.0
+
+# Utilities
+python-dotenv==1.0.1

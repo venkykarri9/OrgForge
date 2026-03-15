@@ -60,10 +60,10 @@ export default function StoriesPage() {
                 </a>
               )}
               <Link
-                href={`/projects/${projectId}/pipeline/${s.id}`}
-                className="text-sm text-gray-600 hover:underline"
+                href={`/projects/${projectId}/stories/${s.id}`}
+                className="text-sm font-medium text-blue-600 hover:underline"
               >
-                Pipeline →
+                Open →
               </Link>
             </div>
           </li>

@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from backend.core.config import get_settings
 from backend.core.database import create_tables
 from backend.core.cache import close_redis
-from backend.api import auth, orgs, metadata, pipeline, deployments, git, ai
+from backend.api import auth, orgs, metadata, pipeline, deployments, git, ai, chat
 
 settings = get_settings()
 
@@ -39,6 +39,7 @@ app.include_router(pipeline.router, prefix="/api/pipeline", tags=["pipeline"])
 app.include_router(deployments.router, prefix="/api/deployments", tags=["deployments"])
 app.include_router(git.router, prefix="/api/git", tags=["git"])
 app.include_router(ai.router, prefix="/api/ai", tags=["ai"])
+app.include_router(chat.router, prefix="/api/chat", tags=["chat"])
 
 
 @app.get("/health")
